@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Reset CSS (started with vanilla css, so this is still here) -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Javascript game file -->
+    <script src="assets/javascript/game.js"></script>
+
+    <title>Role Playing Game</title>
+  </head>
+
+  <body>
+    <div class="container mt-4">
+        <div class="game-window">
+            <section class="row">
+                <div class="col-5 p-3" id="player-info">
+                    <span id="player-char">PLAYER</span>
+                    <br class"m-0 p-0">
+                    <span id="player-hp">000</span>
+                </div>
+                <div class="col-2"><span id="vs">VS</span></div>
+                <div class="col-5 p-3" id="enemy-info">
+                    <span id="enemy-char">OPPONENT</span>
+                    <br class"m-0 p-0">
+                    <span id="enemy-hp">000</span>
+                </div>
+            </section>
+            <section class="row mt-4">
+                <div clas="col-1"></div>
+                <div class="col-4 combatant-area">
+                    <img class="img-fluid" id="player-img" src="assets/images/charImg-00.png">
+                </div>
+                <div class="col-2 attack-area">
+                    <button class="attack-button" type="button">LOADING</button>
+                </div>
+                <div class="col-4 combatant-area">
+                    <img class="img-fluid" id="enemy-img" src="assets/images/charImg-00.png">
+                </div>
+                <div clas="col-1"></div>
+            </section>
+            <section class="row mt-1 mb-4">
+                <div class="col-2"></div>
+                <div class="col-8" id="message-box">STAR WARS<br>RPG</div>
+                <div class="col-2"></div>
+            </section>
+            <section class="row mt-1 mb-4">
+                <div class="col-3"></div>
+                <div class="col-6 roster-chars">
+                    <!--Mental note: 03 nd 02 are swapped for aesthetic purposes. This will not match how they are arranged in css and js files-->
+                    <img class ="img-fluid roster-01-idle" src="assets/images/charImg-01.png">
+                    <img class ="img-fluid roster-03-idle" src="assets/images/charImg-03.png">
+                    <img class ="img-fluid roster-02-idle" src="assets/images/charImg-02.png">
+                    <img class ="img-fluid roster-04-idle" src="assets/images/charImg-04.png">
+                </div>
+                <div class="col-3"></div>
+            </section>
+        </div>
+    </div>
+  </body>
+</html>

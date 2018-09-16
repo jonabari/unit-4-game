@@ -1,0 +1,191 @@
+
+/* StarWars font */
+@font-face {font-family:"STARWARS";src:url("../font/STARWARS.eot?") format("eot"),url("../font/STARWARS.woff") format("woff"),url("../font/STARWARS.ttf") format("truetype"),url("../font/STARWARS.svg#STARWATS") format("svg");font-weight:normal;font-style:normal;}
+
+/* Damage font */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+
+body {
+    background-image: url("../images/bgBody.png");
+    font-family: "STARWARS";
+    overflow-wrap: normal;
+}
+
+.container {
+    background-image: url("../images/bgImg-00.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat-y;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    border: 1em solid white;
+    clear:both;
+    border-radius: 25px;
+}
+
+.game-window {
+    margin:1em;
+} 
+
+#player-info, #enemy-info, #vs {
+    text-align: center;
+    position: relative;
+    width: 45%;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.25em;
+    /* padding: 1em 0; */
+    /* padding-left: 1em; */
+    border-radius: 25px;
+}
+
+#player-info {
+    background-color:goldenrod;
+}
+
+#player-char, #enemy-char {
+    position: relative;
+    left:5%
+}
+
+#player-hp, #enemy-hp {
+    font-size: 175%;
+    position: relative;
+    left:3%;
+}
+
+#vs {
+    position: relative;
+    top:20%;
+    left:8%;
+    font-size: 250%;
+    letter-spacing: 0.5em;
+}
+
+#enemy-info {
+    background-color:goldenrod;
+}
+
+.combatant-area {
+    margin:0 auto;
+    float:left;
+    text-align: center;
+}
+
+/* #player-img, #enemy-img {
+    margin: 0 auto;
+} */
+
+#player-img, #enemy-img {
+    float:left;
+    position: relative;
+} 
+
+/* #player-attack, #enemy-counter {
+    position: relative;
+    bottom:50%;
+    left:5%;
+    top: 9em;
+    letter-spacing: 0.25em;
+    color:gold;
+    text-align: center;
+    margin:0;
+    max-height: 100%;
+}  */
+
+.attack-area {
+    position: relative;
+    /* top: 13em; */
+    float: left;
+}
+
+.attack-button, .wait-button, .start-button {
+    padding:1em;
+    position:relative;
+    top:40%;
+    color: white;
+    background-color: goldenrod;
+    border: none;
+    width: 90%;
+    border-radius: 25px;
+    width:100%;
+    transition: all .15s ease-in-out;
+}
+
+.attack-button:hover, .start-button:hover {
+    transform: scale(1.25);
+}
+
+
+#enemy-img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* #enemy-counter {
+
+} */
+
+#message-box {
+    position: relative;
+    left:1%;
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+    letter-spacing: 0.25em;
+    color: white;
+}
+
+/* .roster-char {
+    margin: 0 auto;
+    padding-left:25%;
+} */
+
+.roster-01-idle, .roster-02-idle, .roster-03-idle, .roster-04-idle,.roster-01-charSelect, .roster-02-charSelect, .roster-03-charSelect, .roster-04-charSelect, .roster-01-enemySelect, .roster-02-enemySelect, .roster-03-enemySelect, .roster-04-enemySelect {
+    margin: 0 auto;
+    padding:0 .5em;
+    width:23%;
+    transition: all .15s ease-in-out;
+}
+
+.roster-01-charSelect:hover, .roster-02-charSelect:hover, .roster-03-charSelect:hover, .roster-04-charSelect:hover, .roster-01-enemySelect:hover, .roster-02-enemySelect:hover, .roster-03-enemySelect:hover, .roster-04-enemySelect:hover {
+    transform: scale(1.45);
+}
+
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body, .attack-button, .wait-button, .start-button {
+        font-size: 0.5em;
+    }
+    .container {
+        min-width:550px;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body, .attack-button, .wait-button, .start-button {
+        font-size: 0.75em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body, .attack-button, .wait-button, .start-button {
+        font-size: 1em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body, .attack-button, .wait-button, .start-button {
+        font-size: 1em;
+    }
+    .container {
+        max-width:1080px;
+    }
+}
